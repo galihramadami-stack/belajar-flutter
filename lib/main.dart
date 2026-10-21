@@ -1,8 +1,9 @@
+import 'container_widget/latihan_flutter.dart';
 import 'package:flutter/material.dart';
 
-//bagian main app
+// bagian main app (menjalankan aplikasi)
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -14,21 +15,32 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text("Belajar flutter"),
+          title: Text("Belajar Flutter"),
           backgroundColor: Colors.blue,
         ), // AppBar
-        body: const Center(
-          child: Text(
-            "hello flutter",
-            style: TextStyle(
-              fontSize: 24,
-              fontWeight: FontWeight.bold,
-              backgroundColor: Colors.amber,
-              fontStyle: FontStyle.italic,
-            ),
-          ),
-        ), // Center
+        body: LatihanWidget(), // Center
       ), // Scaffold
     ); // MaterialApp
+  }
+}
+
+class HelloWidget extends StatelessWidget {
+  const HelloWidget({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: Text(
+        "Hello Flutter",
+        style: TextStyle(
+          fontSize: 24,
+          fontWeight: FontWeight.bold,
+          backgroundColor: Colors.amber,
+          fontStyle: FontStyle.italic,
+        ), // TextStyle
+      ), // Text
+    );
   }
 }
