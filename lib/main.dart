@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:galih_flutter/listview_widget/latihan.dart';
+import 'package:galih_flutter/listview_widget/list_builder2.dart';
+import 'package:galih_flutter/listview_widget/list_view.dart';
+import 'package:galih_flutter/listview_widget/list_view_builder_widget.dart';
 import 'package:galih_flutter/row_column.dart/belajar_widget.dart';
 import 'package:galih_flutter/size_box_widget/ExpandedWidget.dart';
 import 'package:galih_flutter/size_box_widget/LayouteDua.dart';
@@ -25,7 +29,7 @@ class MyApp extends StatelessWidget {
           title: const Text("belajar"),
           backgroundColor: const Color.fromARGB(255, 255, 255, 255),
         ), // AppBar
-        body: const Belajarsatu(),
+        body: Latihan(),
       ), // Scaffold
     ); // MaterialApp
   }

@@ -268,7 +268,7 @@ class Belajarsatu extends StatelessWidget {
                       child: Text(
                         'TAILWIND',
                         style: TextStyle(
-                          color: Colors.white,
+                          color: Color.fromARGB(255, 255, 255, 255),
                           fontSize: 11,
                           fontWeight: FontWeight.bold,
                         ),
