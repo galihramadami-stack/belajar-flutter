@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:galih_flutter/Latihan_ke3/latihan3_widget.dart';
+import 'package:galih_flutter/grid_view/Grid_basic.dart';
+import 'package:galih_flutter/grid_view/grid_builder_widget.dart';
 import 'package:galih_flutter/listview_widget/latihan.dart';
 import 'package:galih_flutter/listview_widget/list_builder2.dart';
 import 'package:galih_flutter/listview_widget/list_view.dart';
@@ -29,7 +32,7 @@ class MyApp extends StatelessWidget {
           title: const Text("belajar"),
           backgroundColor: const Color.fromARGB(255, 255, 255, 255),
         ), // AppBar
-        body: Latihan(),
+        body: Latihan3Widget(),
       ), // Scaffold
     ); // MaterialApp
   }
