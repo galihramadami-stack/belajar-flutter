@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Belajarsatu extends StatelessWidget {
-  const new({super.key});
+class BelajarSatu extends StatelessWidget {
+  const BelajarSatu({super.key});
 
    Widget build(BuildContext context) {
     return Column(

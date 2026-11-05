@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 
-class ListSeparatedWidget extends StatelessWidget {
- ListSeparatedWidget({super.key});
+class ListViewBuilderWidget extends StatelessWidget {
+  const ListViewBuilderWidget({super.key});
 
-  var partai = ["Golongan Karya", "PDIP", "DEMOKRAT", "PKB"];
-  var partaiColour = [Colors.amber, Colors.red, Colors.blue, Colors.green];
+  final partai = const ["Golongan Karya", "PDIP", "DEMOKRAT", "PKB"];
+  final partaiColour = const [Colors.amber, Colors.red, Colors.blue, Colors.green];
 
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
       itemCount: partai.length,
-      itemBuilder: (context, index){
+      itemBuilder: (context, index) {
         return Container(
           height: 400,
           color: partaiColour[index],
@@ -19,12 +19,13 @@ class ListSeparatedWidget extends StatelessWidget {
       },
       separatorBuilder: (context, index) {
         return Divider(
-          color: Colors.black, 
+          color: Colors.black,
           height: 10,
           radius: BorderRadius.circular(12),
-          indent: 90, endIndent: 90,
+          indent: 90,
+          endIndent: 90,
         );
-      }
+      },
     );
   }
 }

@@ -6,6 +6,8 @@ import 'package:galih_flutter/listview_widget/latihan.dart';
 import 'package:galih_flutter/listview_widget/list_builder2.dart';
 import 'package:galih_flutter/listview_widget/list_view.dart';
 import 'package:galih_flutter/listview_widget/list_view_builder_widget.dart';
+import 'package:galih_flutter/navigation/Aboute_page.dart';
+import 'package:galih_flutter/navigation/Contoh_navigation.dart';
 import 'package:galih_flutter/row_column.dart/belajar_widget.dart';
 import 'package:galih_flutter/size_box_widget/ExpandedWidget.dart';
 import 'package:galih_flutter/size_box_widget/LayouteDua.dart';
@@ -26,15 +28,25 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      initialRoute: '/',
+      routes: {
+        '/': (context) => const ContohNavigation(),
+        '/grid': (context) => const GridBasic(),
+        '/list': (context) => const Latihan(),
+        '/list2': (context) => const Latihan3Widget(),
+        '/grid2': (context) => GridBuilderWidget(),
+        '/list3': (context) => const ListViewBuilderWidget(),
+        '/layout1': (context) => const LayoutSatu(),
+        '/layout2': (context) => const LayoutDua(),
+        '/layout3': (context) => const LayoutTiga(),
+        '/layout4': (context) => const LayoutEempat(),
+        '/expanded': (context) => const ExpandedWidget(),
+        '/stack': (context) => const StackWidget(),
+        '/belajar1': (context) => const BelajarSatu(),
+        '/belajar2': (context) => const BelajarWidget(),
+      },
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text("belajar"),
-          backgroundColor: const Color.fromARGB(255, 255, 255, 255),
-        ), // AppBar
-        body: Latihan3Widget(),
-      ), // Scaffold
-    ); // MaterialApp
+    );
   }
 }
 
@@ -43,7 +55,7 @@ class HelloWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return const Center(
       child: Text(
         "Hello Flutter",
         style: TextStyle(
@@ -51,8 +63,8 @@ class HelloWidget extends StatelessWidget {
           fontWeight: FontWeight.bold,
           backgroundColor: Colors.amber,
           fontStyle: FontStyle.italic,
-        ), // TextStyle
-      ), // Text
+        ),
+      ),
     );
   }
 }

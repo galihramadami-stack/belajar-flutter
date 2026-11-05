@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class LatihanLayoutDua extends StatelessWidget {
-  const LatihanLayoutDua({super.key});
+class BelajarWidget extends StatelessWidget {
+  const BelajarWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
